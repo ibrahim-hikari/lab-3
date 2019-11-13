@@ -1,0 +1,53 @@
+<!-- Note: you may use this starter code, but it is not a requirement -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Gallery of Horns</title>
+    <link rel="stylesheet" href="css/page.css">
+    <!-- <link rel="stylesheet" href="css/base.css" /> -->
+    <!-- <link rel="stylesheet" href="css/layouts.css" /> -->
+    <!-- <link rel="stylesheet" href="css/modules.css" /> -->
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="horns-template" type="text/x-handlebars-template">
+        <div class="{{keyword}}">
+            <h2>{{title}}</h2>
+            <img src="{{image_url}}" alt="">
+            <p>{{description}}</p>
+        </div>
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>The Gallery of Horns</h1>
+        <span>
+            <button class="page-1">page1</button>
+            <button class="page-2">page2</button>
+        </span>
+        <select class="filter">
+            <option value="default">Filter by Keyword</option>
+        </select>
+        <select class="sort">
+            <option value="default">Sort by</option>
+            <option value="title">Title</option>
+            <option value="number">Number of Horns</option>
+        </select>
+    </header>
+    <main>
+        <section id="photo-template">
+        </section>
+    </main>
+    <footer>
+        &copy; 2018 Code Fellows
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/page.js"></script> -->
+    </body>
+
+</html>
