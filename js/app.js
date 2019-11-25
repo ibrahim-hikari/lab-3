@@ -21,14 +21,6 @@ Horns.prototype.render = function () {
     $('div').fadeIn(1000);
 };
 
-// function boxRender(el) {
-//     let templateMrkup = $('#box-template').html();
-//     let template = Handlebars.compile(templateMrkup);
-//     let hornOutput = template(el);
-//     $('#box').append(hornOutput);
-//     // $('div').hide();
-//     // $('div').fadeIn(1000);
-// };
 
 function populateSelectBox() {
     let seen = {};
@@ -97,12 +89,7 @@ function sortByNumOfHorns() {
     });
 }
 
-// $(`#photo-template`).on('click',function () { 
-//     let clicked = $('#photo-template>div').attr('id');
-//     boxRender(clicked);
-//     console.log('as', clicked);
-        
-// });
+
 $('.filter').on('change', function () {
     let selected = $(this).val();
     $('div').hide();
@@ -133,23 +120,3 @@ function showData(pageNum) {
 $(document).ready(function () {
     showData(1)
 });
-
-// //Showing the rules of the game
-// function show() {
-//     // var inst = document.getElementById(`${this.keyword}`)
-//     var foggy = document.getElementById('foggy')
-//     // inst.setAttribute('style',' visibility: visible; opacity: .5; transition: opacity 1s');
-//     foggy.setAttribute('style',' opacity:.5; transition: opacity 1s');
-//   }
-//   var visible = document.getElementById('photo-template')
-//   visible.addEventListener('click', show)
-  
-  //Hiding the rules 
-//   function hide() {
-//     var inst = document.getElementById('back');
-//     var foggy = document.getElementById('foggy');
-//     inst.setAttribute('style','opacity:0; transition: opacity 1s; z-index:0');
-//     foggy.setAttribute('style','opacity:0; transition: opacity 1s; z-index:0');
-//   }
-//   var hidden = document.getElementById('hide')
-//   hidden.addEventListener('click', hide)
